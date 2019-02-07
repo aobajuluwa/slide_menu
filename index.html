@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main>
+		<div class="eyebrow_wrapper">
+			<nav class="eyebrow_nav">
+				<div class="locale_wrapper">
+					<button class="locale_btn">
+						<span><img src="./images/flag.png"></span>
+						<span>EN</span>
+						<span><i class="fa fa-chevron-down"></i></span>
+					</button>
+				</div>
+			</nav>
+		</div>
+		<div class="logobar_wrapper">
+			<div class="logo_bar">
+				<div class="logo_bar_left">
+					<div id="logo">
+						<a>Tucker Home <br />Goods</a>
+					</div>
+					<div class="search-container">
+				    	<form>
+				      		<input type="text" name="search">
+				      		<a href="#"><i class="fa fa-search"></i></a>
+				    	</form>
+				  	</div>
+				  	<div class="order_btn">
+				  		<button>Quick Order</button>
+				  	</div>
+				</div>
+				<div class="logo_bar_right">
+				  	<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="main_nav_wrapper">
+			<nav class="main_nav">
+				<div class="main_nav_left">
+					<ul>
+						<li>
+							<a href="#">Living</a>
+						</li>
+						<li>
+							<a href="#">Dining & Kitchen</a>
+						</li>
+						<li>
+							<a href="#">Bedroom</a>
+						</li>
+						<li class="lighting" id="lighting">
+							<a href="#" class="lighting_btn" onclick="showHide()">Lighting <i class="fa fa-chevron-down"></i></a>
+							<div class="lighting_menu_wrap">
+								<ul class="lighting_menu menu">
+									<li><a href="#">Ceiling Lights</a></li>
+									<li class="lamps"><a href="#" onclick="slideLeft()">Lamps <i class="fa fa-chevron-right"></i></a>
+										<ul class="lamps_menu menu">
+											<li class="lamps_close""><a href="#" onclick="slideRight()"><i class="fa fa-chevron-left"></i> Lamps</a></li>
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+											<li><a href="#">Item 4</a></li>
+											<li><a href="#">Item 5</a></li>
+											<li><a href="#">Item 6</a></li>
+											<li class="item_7"><a href="#" onclick="slideItemLeft()">Item 7 <i class="fa fa-chevron-right"></i></a>
+												<ul class="item_7_menu menu">
+													<li><a href="#" onclick="slideItemRight()"><i class="fa fa-chevron-left"></i>Item 7</a></li>
+													<li><a href="#">Sub Item 1</a></li>
+													<li><a href="#">Sub Item 2</a></li>
+													<li><a href="#">Sub Item 3</a></li>
+													<li><a href="#">Sub Item 4</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Item 8</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Outdoor Lights</a></li>
+									<li class="pendants"><a href="#" onclick="slidePendantsLeft()">Pendants <i class="fa fa-chevron-right"></i></a>
+										<ul class="pendants_menu menu">
+											<li><a href="#"  onclick="slidePendantsRight()"><i class="fa fa-chevron-left"></i> Pendants</a></li>
+											<li><a href="#">Farmhouse</a></li>
+											<li class="industrial"><a href="#" onclick="slideIndustrialLeft()">Industrial <i class="fa fa-chevron-right"></i></a>
+												<ul class="industrial_menu menu">
+													<li><a href="#" onclick="slideIndustrialRight()"> <i class="fa fa-chevron-left"></i>Industrial</a></li>
+													<li><a href="#">Brass</a></li>
+													<li><a href="#">Chrome</a></li>
+													<li><a href="#">Gold</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Outback</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Outdoor</a>
+						</li>
+						<li>
+							<a href="#">More <i class="fa fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="main_nav_right">
+					<ul>
+						<li>
+							<a href="#"><img src="./images/THD_logo.jpg">Home Depot West <i class="fa fa-chevron-down"></i></a>
+						</li>
+						<li>
+							<a href="#">Order history</a>
+						</li>
+						<li>
+							<a href="#">Lists</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<section class="hero">
+			<div class="hero_wrapper">
+				<img src="./images/slide1.jpg">
+			</div>
+		</section>
+	</main>
+	
+	<script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

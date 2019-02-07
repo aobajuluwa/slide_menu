@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+body, button {
+	font-family: "Roboto Condensed", Sans-serif;
+	margin: 0;
+}
+
+.eyebrow_wrapper {
+	background-color: #323232;
+}
+
+.eyebrow_nav, .main_nav {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 15px 25px;
+}
+
+.locale_btn {
+	display: flex;
+	align-items: center;
+	font-size: 1em;
+	background-color: transparent;
+	border: none;
+	color: #9a9a9a;
+	margin-left: 25px;
+}
+
+.locale_btn span {
+	margin-right: 7px;
+}
+
+.fa-chevron-down {
+	font-size: 0.8em;
+	vertical-align: middle;
+}
+
+.locale_btn img {
+	width: 20px;
+}
+
+/*========= Logo Bar ============*/
+
+.logo_bar {
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 88px;
+}
+
+.logo_bar_left {
+	float: left;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 20px 25px;
+}
+
+#logo {
+	background-image: url("../images/tucker-logo.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	color: transparent;
+	height: 100%;
+	width: 250px;
+}
+
+.search-container {
+  width: 900px;
+  display: block;
+}
+
+.search-container input {
+	margin: 0 auto;
+	width: 700px;
+	height: 45px;
+	padding: 0 20px;
+	font-size: 1rem;
+	border: 1px solid #D0CFCE;
+	outline: none;
+}
+
+.search-container a {
+	color: #5b5b5b;
+	text-decoration: none;
+		position: relative;
+	float: right;
+	top: 10px;
+	right: 175px;
+	font-size: 1.2em;
+}
+
+.order_btn button{
+	color: #5b5b5b;
+	border: 1px solid #5b5b5b;
+	padding: 10px 25px;
+	background-color: none;
+	font-size: 1.1em;
+}
+
+.logo_bar_right {
+	float: right;
+	display: flex;
+	align-items: center;
+	background-color: #5b5b5b;
+	padding: 30px;
+}
+
+.logo_bar_right i {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 1.75em;
+}
+
+/*========= Main Nav ============*/
+
+.main_nav_wrapper {
+	background-color: #eee;
+}
+
+.main_nav {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.main_nav i {
+	font-size: 0.7em;
+}
+
+.main_nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main_nav ul li {
+	padding: 10px 0;
+	float: left;
+	position: relative;
+}
+
+.main_nav li a {
+	display: block;
+	color: #5b5b5b;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.main_nav li img {
+	width: 25px;
+	vertical-align: middle;
+	margin-right: 10px;
+	float: left;
+}
+
+.main_nav li:hover {
+	background-color: #e5e5e5;
+}
+
+.menu {
+	background-color: #eee;
+	min-width: 260px;
+	transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.3s ease-in-out; /** Firefox **/
+    -o-transition: all 0.3s ease-in-out; /** Opera **/
+}
+
+.menu > li {
+	padding: 0 !important;
+	width: 100%;
+}
+
+.menu > li > a {
+	float: none;
+	color: black;
+	padding: 15px 20px;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+}
+
+/*.lighting:hover .lighting_menu {
+	display: block;
+}*/
+
+.lighting_menu_wrap {
+	position: absolute;
+	height: 204px;
+	width: 260px;
+	top: 69px;
+	overflow: hidden;
+}
+
+.lighting_menu {
+	display: none;
+	position: absolute;
+	background-color: #eee;
+	min-width: 260px;
+	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+	z-index: 1;
+}
+
+.lamps_menu {
+	position: absolute;
+	top: -51px;
+	left: 260px;
+	background-color: #eee;
+	min-width: 260px;
+	z-index: 1;
+}
+
+.pendants_menu {
+	position: absolute;
+	top: -153px;
+	left: 260px;
+	z-index: 1;
+}
+
+.item_7_menu {
+	position: absolute;
+	top: -357px;
+	left: 260px;
+	z-index: 1;
+}
+
+.industrial_menu {
+	position: absolute;
+	top: -102px;
+	left: 260px;
+	z-index: 1;
+}
+
+.industrial_menu > li:nth-child(1) > a, .item_7_menu > li:nth-child(1) > a, .pendants_menu > li:nth-child(1) > a, .lamps_menu > li:nth-child(1) > a {
+	justify-content: flex-start;
+	background-color: #e5e5e5;
+	padding-left: 5px;
+}
+
+.industrial_menu > li:nth-child(1) > a i, .item_7_menu > li:nth-child(1) > a i, .pendants_menu > li:nth-child(1) > a i, .lamps_menu > li:nth-child(1) > a i {
+	margin-right: 10px;
+}
+
+.hero_wrapper {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+.show {
+	display: block;
+}
+
+.slideLeft {
+  transform: translate(-260px);
+  z-index: 5;
+}
