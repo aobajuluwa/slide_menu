@@ -52,6 +52,10 @@ window.onclick = function(e) {
   	var myMenu = document.getElementsByClassName("lighting_menu");
     	if (myMenu[0].classList.contains('show')) {
       		myMenu[0].classList.remove('show');
+          document.getElementsByClassName("lamps_menu")[0].classList.remove("slideLeft");
+          document.getElementsByClassName("pendants_menu")[0].classList.remove("slideLeft");
+          document.getElementsByClassName("items_7_menu")[0].classList.remove("slideLeft");
+          document.getElementsByClassName("industrial_menu")[0].classList.remove("slideLeft");
     	}
   	}
 }
