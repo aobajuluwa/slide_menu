@@ -136,7 +136,6 @@ body, button {
 }
 
 .main_nav ul li {
-	padding: 10px 0;
 	float: left;
 	position: relative;
 }
@@ -146,7 +145,7 @@ body, button {
 	color: #5b5b5b;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 14px 16px;
+	padding: 20px 16px;
 	text-decoration: none;
 }
 
@@ -194,7 +193,6 @@ body, button {
 	position: absolute;
 	height: 204px;
 	width: 260px;
-	top: 69px;
 	overflow: hidden;
 }
 
