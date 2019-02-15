@@ -260,6 +260,10 @@ body, button {
 	display: block;
 }
 
+.visible {
+	visibility: visible !important;
+}
+
 .slideLeft {
   transform: translate(-360px);
   z-index: 5;
@@ -268,3 +272,13 @@ body, button {
 .viewall_btn {
 	color: #0472cb !important;
 }
+
+.body_overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	/*transition: all 0.5s;*/
+}
+

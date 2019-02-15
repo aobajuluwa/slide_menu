@@ -1,5 +1,6 @@
 function showHide() {
   document.getElementsByClassName("lighting_menu_wrap")[0].classList.toggle("show");
+  document.getElementsByClassName("body_overlay")[0].classList.toggle("visible");
     if (document.getElementsByClassName("lighting_menu_wrap")[0].classList.contains('show')) {
         document.getElementsByClassName("lamps_menu")[0].classList.remove("slideLeft");
         document.getElementsByClassName("pendants_menu")[0].classList.remove("slideLeft");
@@ -62,6 +63,7 @@ window.onclick = function(e) {
         document.getElementsByClassName("item_7_menu")[0].classList.remove("slideLeft");
         document.getElementsByClassName("industrial_menu")[0].classList.remove("slideLeft");
     		myMenu[0].classList.remove('show');
+        document.getElementsByClassName("body_overlay")[0].classList.remove("visible");
     	}
   	}
 }
