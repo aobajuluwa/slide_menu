@@ -1,6 +1,6 @@
 function showHide() {
-  document.getElementsByClassName("lighting_menu")[0].classList.toggle("show");
-    if (document.getElementsByClassName("lighting_menu")[0].classList.contains('show')) {
+  document.getElementsByClassName("lighting_menu_wrap")[0].classList.toggle("show");
+    if (document.getElementsByClassName("lighting_menu_wrap")[0].classList.contains('show')) {
         document.getElementsByClassName("lamps_menu")[0].classList.remove("slideLeft");
         document.getElementsByClassName("pendants_menu")[0].classList.remove("slideLeft");
         document.getElementsByClassName("item_7_menu")[0].classList.remove("slideLeft");
@@ -55,7 +55,7 @@ function slideIndustrialRight() {
 
 window.onclick = function(e) {
   if (!e.target.closest('.lighting')) {
-  	var myMenu = document.getElementsByClassName("lighting_menu");
+  	var myMenu = document.getElementsByClassName("lighting_menu_wrap");
     	if (myMenu[0].classList.contains('show')) {
         document.getElementsByClassName("lamps_menu")[0].classList.remove("slideLeft");
         document.getElementsByClassName("pendants_menu")[0].classList.remove("slideLeft");

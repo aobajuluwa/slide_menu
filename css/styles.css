@@ -162,7 +162,7 @@ body, button {
 
 .menu {
 	background-color: #eee;
-	min-width: 260px;
+	min-width: 360px;
 	transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out; /** Chrome & Safari **/
     -moz-transition: all 0.3s ease-in-out; /** Firefox **/
@@ -170,19 +170,21 @@ body, button {
 }
 
 .menu > li {
+	border-bottom: 1px solid #ddd;
 	padding: 0 !important;
 	width: 100%;
 }
 
 .menu > li > a {
 	float: none;
-	color: black;
-	padding: 15px 20px;
+	color: #5b5b5b;
+	padding: 15px 25px;
 	text-decoration: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	text-align: left;
+	text-transform: none;
 }
 
 /*.lighting:hover .lighting_menu {
@@ -190,59 +192,63 @@ body, button {
 }*/
 
 .lighting_menu_wrap {
+	display: none;
 	position: absolute;
 	height: 204px;
-	width: 260px;
+	width: 360px;
 	overflow: hidden;
 }
 
 .lighting_menu {
-	display: none;
 	position: absolute;
 	background-color: #eee;
-	min-width: 260px;
 	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
 	z-index: 1;
 }
 
 .lamps_menu {
 	position: absolute;
-	top: -51px;
-	left: 260px;
+	top: -52px;
+	left: 360px;
 	background-color: #eee;
-	min-width: 260px;
 	z-index: 1;
 }
 
 .pendants_menu {
 	position: absolute;
-	top: -153px;
-	left: 260px;
+	top: -156px;
+	left: 360px;
 	z-index: 1;
 }
 
 .item_7_menu {
 	position: absolute;
-	top: -357px;
-	left: 260px;
+	top: -364px;
+	left: 360px;
 	z-index: 1;
 }
 
 .industrial_menu {
 	position: absolute;
-	top: -102px;
-	left: 260px;
+	top: -104px;
+	left: 360px;
 	z-index: 1;
 }
 
-.industrial_menu > li:nth-child(1) > a, .item_7_menu > li:nth-child(1) > a, .pendants_menu > li:nth-child(1) > a, .lamps_menu > li:nth-child(1) > a {
-	justify-content: flex-start;
+.industrial_menu > li:nth-child(1), .item_7_menu > li:nth-child(1), .pendants_menu > li:nth-child(1), .lamps_menu > li:nth-child(1) {
+	display: flex;
+	justify-content: space-between;
 	background-color: #e5e5e5;
-	padding-left: 5px;
+	border-bottom: 2px solid #ddd;
+}
+
+.industrial_menu > li:nth-child(1) > a, .item_7_menu > li:nth-child(1) > a, .pendants_menu > li:nth-child(1) > a, .lamps_menu > li:nth-child(1) > a {
+	color: #1f1f1f;
+	margin-left: -12px;
 }
 
 .industrial_menu > li:nth-child(1) > a i, .item_7_menu > li:nth-child(1) > a i, .pendants_menu > li:nth-child(1) > a i, .lamps_menu > li:nth-child(1) > a i {
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .hero_wrapper {
@@ -255,6 +261,10 @@ body, button {
 }
 
 .slideLeft {
-  transform: translate(-260px);
+  transform: translate(-360px);
   z-index: 5;
+}
+
+.viewall_btn {
+	color: #0472cb !important;
 }
