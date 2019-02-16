@@ -52,9 +52,10 @@ body, button {
 .logo_bar_left {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	box-sizing: border-box;
-	padding: 20px 25px;
-	width: 90%;
+	padding: 0 25px;
+	width: 1345px;
 }
 
 #logo {
@@ -64,49 +65,50 @@ body, button {
 	color: transparent;
 	height: 100%;
 	width: 30%;
-	max-width: 250px;
+	max-width: 150px;
 }
 
-.search-container {
-  width: 900px;
-  display: block;
+.search-container form {
+  border: 1px solid #D0CFCE;
 }
 
 .search-container input {
 	margin: 0 auto;
 	width: 700px;
 	height: 45px;
-	padding: 0 20px;
+	padding-left: 20px;
 	font-size: 1rem;
-	border: 1px solid #D0CFCE;
+	border: none;
 	outline: none;
 }
 
 .search-container a {
 	color: #5b5b5b;
 	text-decoration: none;
-		position: relative;
+	position: relative;
 	float: right;
 	top: 10px;
-	right: 145px;
 	font-size: 1.2em;
+	margin: 0 17px;
 }
 
 .order_btn button{
 	color: #5b5b5b;
 	border: 1px solid #5b5b5b;
-	padding: 10px 25px;
+	padding: 10px 30px;
 	background-color: none;
 	font-size: 1.1em;
+	white-space: nowrap;
 }
 
 .logo_bar_right {
 	float: right;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	background-color: #5b5b5b;
 	height: 100%;
-	padding: 0 35px;
+	width: 95px;
 }
 
 .logo_bar_right i {
@@ -285,6 +287,7 @@ body, button {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.8);
 	visibility: hidden;
+	opacity: 0;
 	transition: opacity 0.1s ease-in-out;
 }
 
